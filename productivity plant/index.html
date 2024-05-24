@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="indexstyle.css">
+        <title>Productive Plant</title>
+    </head>
+    <body>
+        <header>
+            <h1>Productive Plant</h1>
+            <p>Use your efforts to nourish a plant!</p>
+        </header>
+        <div class="menu">
+            <form id="setupform">
+                <label>
+                <p>What is your word goal?</p>
+                <input type="number" placeholder="250" onchange="revealDiv(1)">
+                <div id="first-hiddendiv">
+                    <fieldset id="plant-selection">
+                        <legend>Pick your plant:</legend>
+                        <div id="radio-set-1">
+                            <input class="radio-buttons" type="radio" id="plant-cactus" name="selected_plant" onchange="revealDiv(2)">
+                            <label class="radio-label" for="plant-cactus">Cactus</label>
+                        </div>
+                        <div class="radio-set-2">
+                            <input class="radio-buttons" type="radio" id="plant-placeholder" name="selected_plant" onchange="revealDiv(2)">
+                            <label class="radio-label" for="plant-placeholder">placeholder</label>
+                        <div class="radio-set-3">
+                            <input class="radio-buttons" type="radio" id="plant-placeholder1" name="selected_plant" onchange="revealDiv(2)">
+                            <label class="radio-label" for="plant-placeholder1">placeholder1</label>
+                        </div>
+                    </fieldset><br>
+                    <div id="second-hiddendiv">
+                        <input id="submit-button" type="submit" href="writing.html" value="Start writing...">
+                    </div>
+                    
+                </div>
+                </label>
+            </form>
+        </div>
+        <footer>
+            <p>This was made as a learning project so constructive feedback is appreciated.</p>
+            <div class="footer-socials">
+                <a>Github</a>
+                <a>Contact Me</a>
+            </div>
+        </footer>
+    <script>
+        const submitButton = document.getElementById("submit-button");
+        let divNumber = 1;
+
+        submitButton.addEventListener("click", submitForm())
+
+        function revealDiv(divNumber) {
+            switch(divNumber) {
+                case 1:
+                    document.getElementById("first-hiddendiv").style.visibility="visible";
+                    break;
+                case 2:
+                    document.getElementById("second-hiddendiv").style.visibility="visible";
+                    break;
+            }
+        }
+        function submitForm() {
+            window.location.href="writing.html";
+        }
+    </script>
+    </body>
+</html>

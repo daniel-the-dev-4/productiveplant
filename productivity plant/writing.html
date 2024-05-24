@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="writingstyle.css">
+        <title>Productive Plant</title>
+    </head>
+    <body>
+        <header>
+            <h1>Productive Plant</h1>
+            <p>Use your efforts to nourish a plant!</p>
+        </header>
+        <div class="main">
+            <p id="titledisplay">Your Title</p>
+            <p><span id="words-written">X</span> out of <span id="words-goal">Y</span></p>
+            <div class="writing-area">
+                <form>
+                    <textarea id="typing-area" placeholder="Get writing..."></textarea>
+                </form>
+            </div>
+
+        </div>
+        <footer>
+            <p>This was made as a learning project so constructive feedback is appreciated.</p>
+            <div class="footer-socials">
+                <a>Github</a>
+                <a>Contact Me</a>
+            </div>
+        </footer>
+    <script>
+        const textarea = document.getElementById("typing-area");
+        if(textarea.scrollTop>0){
+            while(textarea.scrollTop>0){
+                textarea.rows++;
+            }
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+html {
+    background-color:darkolivegreen;
+    color:black;
+}
+header {
+    padding-top:5%;
+}
+body {
+    width:85%;
+    height:700px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:burlywood;
+    text-align:center;
+    margin-top:5%;
+}
+footer{
+    padding-top:62%;
+    font-size:small;
+    text-align:center;
+}
+a {
+    text-decoration:underline;
+    color:darkgreen;
+}
+#plant-selection {
+    text-align: left;
+    margin-left:auto;
+    margin-right:auto;
+    width:30%;
+    display:flex;
+    flex-direction: column;
+}
+
+#submit-button {
+    height:75px;
+    width:200px;
+    background-color:rgb(102, 132, 50);
+    border-radius:100px;
+    border: solid 3px darkolivegreen;
+}
+#submit-button:hover {
+    background-color:rgb(102, 132, 50);
+    font-weight:bold;
+    box-shadow: 0 5px 10px 0;
+}
+#first-hiddendiv {
+    visibility: hidden;
+}
+#second-hiddendiv {
+    visibility: hidden;
+}

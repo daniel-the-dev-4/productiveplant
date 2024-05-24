@@ -1,0 +1,30 @@
+html {
+    background-color:darkolivegreen;
+    color:black;
+}
+header {
+    padding-top:5%;
+}
+body {
+    width:85%;
+    height:700px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:burlywood;
+    text-align:center;
+    margin-top:5%;
+}
+footer{
+    padding-top:62%;
+    font-size:small;
+    text-align:center;
+}
+a {
+    text-decoration:underline;
+    color:darkgreen;
+}
+#typing-area {
+    border-radius: 25px;
+    resize:vertical;
+    width:80%;
+}
