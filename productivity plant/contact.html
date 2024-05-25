@@ -2,8 +2,26 @@
 <html lang="en">
     <head>
         <title>Contact Me</title>
+        <link rel="stylesheet" href="indexstyle.css">
     </head>
+    <header>
+        <h2>Contact Me</h2>
+    </header>
     <body>
-
+        <form action="submitform.php" method="POST">
+            <fieldset id="contact-form">
+                <label>Name/Username:</label><br>
+                <input type="text" id="name-input" name="name" placeholder="Name"><br>
+                <label>E-Mail:</label><br>
+                <input type="text" id="email-input" name="email" placeholder="name@mail.com"><br>
+                <label>Subject:</label><br>
+                <input type="text" id="subject-input" name="subject" placeholder="Bug Report"><br>
+                <label>Message:</label><br>
+                <textarea rows="5" id="message-input" name="message">Write something...</textarea><br>
+                <input type="submit" id="submit-button" value="Send">
+            </fieldset>
+        </form>
     </body>
+    <footer>
+    </footer>
 </html>

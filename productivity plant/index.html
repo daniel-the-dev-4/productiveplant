@@ -15,7 +15,7 @@
             <form id="setupform">
                 <label>
                 <p>What is your word goal?</p>
-                <input type="number" placeholder="250" onchange="revealDiv(1)">
+                <input id="word-goal" type="number" placeholder="250" onchange="revealDiv(1)">
                 <div id="first-hiddendiv">
                     <fieldset id="plant-selection">
                         <legend>Pick your plant:</legend>
@@ -32,12 +32,13 @@
                         </div>
                     </fieldset><br>
                     <div id="second-hiddendiv">
-                        <input id="submit-button" type="submit" href="writing.html" value="Start writing...">
+                        <input id="submit-button" type="submit" value="Start writing...">
                     </div>
                     
                 </div>
                 </label>
             </form>
+            <p id="test">Test Line</p>
         </div>
         <footer>
             <p>This was made as a learning project so constructive feedback is appreciated.</p>
@@ -50,7 +51,7 @@
         const submitButton = document.getElementById("submit-button");
         let divNumber = 1;
 
-        submitButton.addEventListener("click", submitForm())
+        submitButton.addEventListener("click", submitForm());
 
         function revealDiv(divNumber) {
             switch(divNumber) {
@@ -62,8 +63,16 @@
                     break;
             }
         }
+
+        //input
+        let wordGoal = document.getElementById("word-goal");
+        let plantSelected = document.getElementById("plant-selection");
+
+        let debugOutput = document.getElementById("test");
+
+        document.getElementById("submit-button").addEventListener("click", submitForm())
         function submitForm() {
-            window.location.href="writing.html";
+            debugOutput.innerHTML="debug text";
         }
     </script>
     </body>
